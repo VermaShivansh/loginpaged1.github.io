@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+.container-fluid{
+    min-height: 100vh;
+    min-width: 100vw;
+    filter: blur(150px);
+    background: linear-gradient(to right, #cecece 0%, #2089b6 100%);
+    opacity: 0.8;
+ }
+ .color1{
+ background-color: #90e0ef;
+ width: 98vw;
+ height: 100vh ;
+ position: absolute;
+ left:-30vw;
+ top:-30vh;
+ clip-path: circle();
+ }
+ .color2{
+ background-color: #f57e7e;
+ width: 50vw;
+ height: 50vh;
+ position: absolute;
+ bottom: 8vh;
+ left: 8vw;
+ }
+ .color3{
+ background-color:  #ffcce7;
+ width: 40vw;
+ height: 55vh;
+ position: absolute;
+ right: 3vw;
+ bottom:5vh;
+ }
+.content{
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   padding: 0;
+   position:absolute;
+   left:0;
+   top:0;
+   background: transparent;
+   overflow-x: hidden;
+}
+.tile{
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 15px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border:1px solid rgb(255, 255, 255,0.5);
+    border-right:1px solid rgb(255, 255, 255,0.3);
+    border-bottom: 1px solid rgb(255, 255, 255,0.3);
+    display: block;
+    z-index: 4;
+}
+.head{
+    color: white;
+    font-weight: 700;
+}
+.head::after{
+    display: block;
+    content:'';
+    max-width: 110px;
+    height: 5px;
+    background-color: white;
+
+}
+form{
+    
+}
+
+form input{
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.1);
+}
+.username, .password, .submit{
+background-color: rgba(255, 255, 255, 0.192);
+width:100%;
+border-radius: 15px;
+text-align: center;
+font-weight: 500;
+border:none;
+padding: 10px;
+transition: all 150ms ease-in;
+outline: none;
+}
+.submit{
+    background: rgba(255, 255, 255, 0.384);
+}
+.submit:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+.username:active,.password:active,.submit:active{
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+
+.glasses{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border:1px solid rgb(255, 255, 255,0.5);
+    border-right:1px solid rgb(255, 255, 255,0.3);
+    border-bottom: 1px solid rgb(255, 255, 255,0.3);
+}
+.glass1{
+    top:-11em;
+    right:-6em;
+    min-height: 100px;
+    min-width: 100px;
+}
+.glass2{
+    top:-14.7em;
+    left:-8em;
+    min-height: 150px;
+    min-width: 150px;
+}.glass3{
+    bottom:-6.7em;
+    right:-6em;
+    min-height: 70px;
+    min-width: 70px;
+}.glass4{
+    bottom:-5.7em;
+    left:-7em;
+    min-height: 100px;
+    min-width: 100px;
+}
+.scale{
+    transition: 200ms linear;
+    transform: scale(1.1);
+    
+}
